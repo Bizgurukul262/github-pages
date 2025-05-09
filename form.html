@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Support Feedback</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Love to Hear From You!</h2>
+<p>Your feedback helps us improve our support experience.</p>
+    <form action="https://script.google.com/macros/s/AKfycbyf8UKJe5z62tFVS9wX3zQMeWZFjgqNiecjO1bfMkum/dev" method="POST">
+      
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name" />
+
+      <label for="resolution_time">How quickly was your issue resolved?</label>
+      <select id="resolution_time" name="resolution_time" required>
+        <option value="" disabled selected> --Select Option -- </option>
+        <option value="Within an hour">Within an hour</option>
+        <option value="Within a day">Within a day</option>
+        <option value="Within 2-3 days">Within 2–3 days</option>
+        <option value="Not resolved yet">Not resolved yet</option>
+      </select>
+
+      <label for="accurate_info">Did the support agent provide accurate and helpful information?</label>
+      <select id="accurate_info" name="accurate_info" required>
+        <option value="" disabled selected> --Select Option -- </option>
+        <option value="Yes, absolutely">Yes, absolutely</option>
+        <option value="Partially">Partially</option>
+        <option value="No">No</option>
+      </select>
+
+      <label for="rating">How would you rate our customer support out of 5?</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select rating</option>
+        <option value="1">1 – Very Poor</option>
+        <option value="2">2 - Poor</option>
+        <option value="3">3 - Satisfactory</option>
+        <option value="4">4 - Good</option>
+        <option value="5">5 – Excellent</option>
+      </select>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
